@@ -1,0 +1,34 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+@import "../../sandstone/lib.less";
+
+.fxos-marketplace {
+    padding-top: @baseLine * 3;
+}
+
+.adaptive-app-search {
+    position: relative;
+    color: #999;
+    .font-size(20px);
+    .open-sans-light;
+    margin: @baseLine auto;
+    padding-top: 160px;
+    max-width: 40em;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -70px;
+        width: 140px;
+        height: 140px;
+        content: '';
+        background-image: url(/media/img/firefox/os-new/icons/search-icon.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+
+        .at2x('/media/img/firefox/os-new/icons/search-icon.png', 140px);
+    }
+}
